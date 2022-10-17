@@ -1,1 +1,19 @@
+<div>
 <h2>Create a new drone</h2>
+<form action="/drones/create" method="GET">
+
+    <label for="name">Name:</label>
+    <input type="text" name="name" value="{{details.name}}"/>
+    <br />
+    <label for="propellers">Hélices:</label>
+    <input type="text" name="propellers" value="{{details.propellers}}"/>
+    <br />
+    <label for="maxSpeed">Velocidad:</label>
+    <input type="text" name="maxSpeed" value="{{details.maxSpeed}}" />
+    <br />
+    <button type="submit">Actualizar</button>
+
+  </form>
+
+</div>
+
