@@ -1,18 +1,19 @@
 <div>
 <h2>Create a new drone</h2>
+
 <form action="/drones/create" method="POST">
 
 
     <label for="name">Name:</label>
-    <input type="text" name="name" value="{{details.name}}"/>
+    <input type="text" name="name"/>
     <br />
-    <label for="propellers">Hélices:</label>
-    <input type="text" name="propellers" value="{{details.propellers}}"/>
+    <label for="propellers">Propellers:</label>
+    <input type="text" name="propellers"/>
     <br />
-    <label for="maxSpeed">Velocidad:</label>
-    <input type="text" name="maxSpeed" value="{{details.maxSpeed}}" />
+    <label for="maxSpeed">Speed:</label>
+    <input type="text" name="maxSpeed"/>
     <br />
-    <button type="submit">Añadir</button>
+    <button type="submit">Add</button>
 
   </form>
 

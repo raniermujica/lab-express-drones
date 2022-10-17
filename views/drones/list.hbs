@@ -3,11 +3,22 @@
 
     <div>
         {{#each droneList}}
-        <p>Nombre: {{name}}</p>
-        <p>Hélice: {{propellers}}</p>
-        <p>Velocidad: {{maxSpeed}}</p>
+        <ul>
+        <li>Nombre: {{name}}</li>
+        <li>Hélice: {{propellers}}</li>
+        <li>Velocidad: {{maxSpeed}}</li>
+        </ul>
+        
+    <button>
+        <a href="/drones/:{{id}}/edit">Update Drone</a>
+    </button>
+    <button>
+        <a href="/drones/:{{id}}/delete">Delete</a>
+    </button>
+
         {{/each}}
     </div>
+
 
 </div>
 
